@@ -20,6 +20,14 @@ public class GameManager : MonoBehaviour
     public TMP_Text coinsText;
     public TMP_Text healthText;
 
+    public void UpdateData(int hp)
+    {
+        redPotionsText.text = "Red Potions: " + potions[0];
+        greenPotionsText.text = "Green Potions: " + potions[1];
+        bluePotionsText.text = "Blue Potions: " + potions[2];
+        coinsText.text = "Coins: " + coins;
+        healthText.text = "Health: " + hp;
+    }
     private void Awake()
     {
         if(instance == null)
@@ -79,13 +87,5 @@ public class GameManager : MonoBehaviour
         Debug.Log("Quitting Game");
     }
 
-    public void UpdateData(int hp)
-    {
-        redPotionsText.text = "Red Potions: " + potions[0];
-        greenPotionsText.text = "Green Potions: " + potions[1];
-        bluePotionsText.text = "Blue Potions: " + potions[2];
-        coinsText.text = "Coins: " + coins;
-        healthText.text = "Health: " + hp;
-    }
 
 }
