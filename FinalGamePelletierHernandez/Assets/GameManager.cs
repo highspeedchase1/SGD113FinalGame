@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
     public TMP_Text healthText;
 
     public void UpdateData(int hp)
-    {
+    { 
         redPotionsText.text = "Red Potions: " + potions[0];
         greenPotionsText.text = "Green Potions: " + potions[1];
         bluePotionsText.text = "Blue Potions: " + potions[2];
@@ -70,6 +70,9 @@ public class GameManager : MonoBehaviour
     
     public void Restart()
     {
+        //Resets the game over panel 
+        gameOverPanel.SetActive(false);
+
         //Reloads Current Scene
         SceneManager.LoadScene("LevelOne", LoadSceneMode.Single);
     }
