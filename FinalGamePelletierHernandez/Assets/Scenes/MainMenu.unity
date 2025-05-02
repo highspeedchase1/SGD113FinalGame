@@ -3903,6 +3903,7 @@ MonoBehaviour:
   coinsText: {fileID: 1162375364}
   healthText: {fileID: 904801331}
   invincibleCountdownText: {fileID: 1374467533}
+  youWinText: {fileID: 788344842}
 --- !u!4 &1931969025
 Transform:
   m_ObjectHideFlags: 0

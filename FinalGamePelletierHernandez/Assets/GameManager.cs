@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
     public TMP_Text coinsText;
     public TMP_Text healthText;
     public TMP_Text invincibleCountdownText;
+    public TMP_Text youWinText;
 
 
     public void UpdateData(int hp)
@@ -72,15 +73,29 @@ public class GameManager : MonoBehaviour
         {
             youWinPanel.SetActive(true);
 
+            //Reactivates Cursor
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+
+            //Get next scene index from build profile
+            int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+
+            //Changes You Win text box to level complete if the player has more levels to go and shows You Win! when level three is beat
+            if (SceneManager.sceneCountInBuildSettings > nextSceneIndex)
+            {
+                youWinText.text = "Level Complete";
+            }
+            else
+            {
+                youWinText.text = "You Win!";
+            }
+
             //Resets all collectibles
             coins = 0;
             potions[0] = 0;
             potions[1] = 0;
             potions[2] = 0;
 
-            //Reactivates Cursor
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
         }
     }
     
