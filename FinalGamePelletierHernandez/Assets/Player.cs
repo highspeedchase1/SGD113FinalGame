@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
 
     int health;
 
-    bool isInvincible = false;
+    public bool isInvincible = false;
     bool sprint = false;
 
     public AudioClip potionCollisionSound;
@@ -142,6 +142,8 @@ public class Player : MonoBehaviour
 
                 isInvincible = true;
                 Debug.Log("Invinsible On");
+
+                GameManager.instance.StartInvincibility();
 
                 //Updates UI
                 GameManager.instance.UpdateData(health);
