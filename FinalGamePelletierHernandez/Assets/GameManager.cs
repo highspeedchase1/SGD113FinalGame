@@ -72,7 +72,11 @@ public class GameManager : MonoBehaviour
         {
             youWinPanel.SetActive(true);
 
+            //Resets all collectibles
             coins = 0;
+            potions[0] = 0;
+            potions[1] = 0;
+            potions[2] = 0;
 
             //Reactivates Cursor
             Cursor.lockState = CursorLockMode.None;
