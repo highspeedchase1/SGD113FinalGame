@@ -68,7 +68,7 @@ public class GameManager : MonoBehaviour
 
     public void CheckLevelWin()
     {
-        if(coins == 1)
+        if(coins == 10)
         {
             youWinPanel.SetActive(true);
 
@@ -82,12 +82,6 @@ public class GameManager : MonoBehaviour
     
     public void Restart()
     {
-<<<<<<< HEAD
-        //Resets the game over panel 
-        gameOverPanel.SetActive(false);
-
-        //Reloads Current Scene
-=======
         //Hides In Game UI 
         gameOverPanel.SetActive(false);
         youWinPanel.SetActive(false);
@@ -116,7 +110,6 @@ public class GameManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
->>>>>>> c34e7b0ccf73f8daba3a1bb5620aa8843cde12b1
         SceneManager.LoadScene("LevelOne", LoadSceneMode.Single);
     }
 

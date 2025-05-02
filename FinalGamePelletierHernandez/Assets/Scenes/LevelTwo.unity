@@ -9939,8 +9939,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   potions: 000000000000000000000000
   coins: 0
+  mainMenuPanel: {fileID: 0}
   gameOverPanel: {fileID: 1798417879}
   youWinPanel: {fileID: 394402977}
+  pickupTextGroup: {fileID: 0}
+  invincibleCountdownParent: {fileID: 0}
   redPotionsText: {fileID: 1830013657}
   bluePotionsText: {fileID: 794636043}
   greenPotionsText: {fileID: 1239703586}
@@ -15535,6 +15538,14 @@ PrefabInstance:
     - target: {fileID: 4908845781130578, guid: 466ae3654e44b714fb2739b63b5a63d6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 180.00002
+      objectReference: {fileID: 0}
+    - target: {fileID: 5305964693515810960, guid: 466ae3654e44b714fb2739b63b5a63d6, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5305964693515810960, guid: 466ae3654e44b714fb2739b63b5a63d6, type: 3}
+      propertyPath: m_Center.y
+      value: -0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

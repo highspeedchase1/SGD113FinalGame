@@ -9044,6 +9044,7 @@ MonoBehaviour:
   gameOverPanel: {fileID: 0}
   youWinPanel: {fileID: 0}
   pickupTextGroup: {fileID: 0}
+  invincibleCountdownParent: {fileID: 0}
   redPotionsText: {fileID: 0}
   bluePotionsText: {fileID: 0}
   greenPotionsText: {fileID: 0}
@@ -14159,6 +14160,14 @@ PrefabInstance:
     - target: {fileID: 4908845781130578, guid: 466ae3654e44b714fb2739b63b5a63d6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 180.00002
+      objectReference: {fileID: 0}
+    - target: {fileID: 5305964693515810960, guid: 466ae3654e44b714fb2739b63b5a63d6, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5305964693515810960, guid: 466ae3654e44b714fb2739b63b5a63d6, type: 3}
+      propertyPath: m_Center.y
+      value: -0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
